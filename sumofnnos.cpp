@@ -8,9 +8,9 @@ int main(){
     int sum=0;
     for(int i=1;i<= n;i++){
          sum+=i;
-        cout<<"i"<<endl;
+        cout<<i<<endl;
     }
-    cout<<sum;
+    cout<<"sum of numbers upto  n is: "<<sum<<endl;
     return 0;
      
 }
