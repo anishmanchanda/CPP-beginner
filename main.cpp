@@ -18,7 +18,7 @@ int main(){
     }   else{
         cout<<"Lenovo Yoga";
     }
-     
+      
 
     return 0;
     
