@@ -13,9 +13,5 @@ int main(){
     else{
         cout<<"entered number is odd"<<endl;
     }
-
-
-
     return 0;
-
 }
