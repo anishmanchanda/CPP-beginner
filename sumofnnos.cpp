@@ -10,6 +10,14 @@ int main(){
          sum+=i;
         cout<<i<<endl;
     }
+    int flag=0;
+    while (flag<=n){
+        
+        cout<<flag<<endl;
+        sum+=flag;
+        flag+=1;
+    }
+
     cout<<"sum of numbers upto  n is: "<<sum<<endl;
     return 0;
      
