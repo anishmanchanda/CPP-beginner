@@ -1,12 +1,40 @@
-// switch instead of multiple if else statements
+// simple calculator with switch statements
 #include <iostream>
 using namespace std;
 int main()
 {
+    int num1,num2;
+    cout<<"enter num1: ";
+    cin>>num1;
+    cout<<"enter num2: ";
+    cin>>num2; 
+    
+    char op;
+    cout<<"choose operator: + - * / : ";
+    cin>>op;
+    switch(op)
+    {
+    case '+':
+        cout<<num1 +num2<<endl;
+        break;
+    case '-':
+        cout<<num1 -num2<<endl;
+        break;
+    case '*':
+        cout<<num1* num2<<endl;
+        break;
+    case '/':
+        cout<<num1 /num2<<endl;
+        break;
+        
+    }
+
+    
+    /*
     cout << "choose a button: ";
     char button;
     cin >> button;
-
+ //break is used in switch so that after execution of req, others dont get executed.
     switch (button)
     {
     case 'a':
@@ -31,4 +59,6 @@ int main()
     default:
         cout<<"Please choose from abcdef.";
     }
+*/
+
 }
