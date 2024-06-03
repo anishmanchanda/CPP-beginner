@@ -17,5 +17,4 @@ int main(){
     else{
         cout<<"not divisible by both 2 and 3"<<endl;
     }
-
 }
