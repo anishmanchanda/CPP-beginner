@@ -87,14 +87,33 @@ int main(){
     */
 
    //HALF PYRAMID USING NUMBERS
+    /*
     int n;
     cout<<"enter number of rows: ";
     cin>>n;
     for(int rowno=1;rowno<=n;rowno++){
         for(int j=1;j<=rowno;j++){
-            cout<<rowno;
+            cout<<rowno<<" ";
         }
         cout<<endl;
     }
+    */
+   //FLOYDS TRIANGLE
+    /*
+   int n;
+   cout<<"enter no of rows: ";
+   cin>>n;
+   int counter=1;
+   for(int rowno=1;rowno<=n;rowno++){
+        for(int colno=1;colno<=rowno;colno++){
+            cout<<counter<<" ";
+            counter+=1;
 
+        }
+        cout<<endl;
+
+   }
+   */
+
+  
 }   
