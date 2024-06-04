@@ -53,6 +53,7 @@ int main(){
 
     //INVERTED HALF PYRAMID
 
+    /*
     int n;
     cout<<"enter n: ";
     string star="*";
@@ -64,6 +65,36 @@ int main(){
         cout<<endl;
         
     } 
+    */
+   
+    //HALF PYRAMID AFTER 180 DEG
+    /*
+    int n;
+    cout<<"enter n: ";
+    cin>>n;
+    string star="*";
+    for(int rowno=1;rowno<=n;rowno++){
+        for(int colno=1;colno<=n;colno++){
+            if(colno<=n-rowno){
+                cout<<" ";
+            }
+            else{
+                cout<<star;
+            }
+        }
+        cout<<endl;
+    }
+    */
+
+   //HALF PYRAMID USING NUMBERS
+    int n;
+    cout<<"enter number of rows: ";
+    cin>>n;
+    for(int rowno=1;rowno<=n;rowno++){
+        for(int j=1;j<=rowno;j++){
+            cout<<rowno;
+        }
+        cout<<endl;
+    }
 
 }   
-
