@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 int main(){
-    string star="*";
-    cout<<star*4;
+    for(int i=5;i==0;i--){
+        cout<<i<<endl;
+    }
 }

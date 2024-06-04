@@ -25,12 +25,13 @@ int main(){
 
    //HOLLOW RECTANGLE
 
+    /*
    int rows,collumns;
    cout<<"enter no. of rows";
    cin>>rows;
    cout<<"enter no. of collumns";
    cin>>collumns;
-   string star="* ";
+   string star=" *";
    for(int rowno=1;rowno<=rows;++rowno){
         for(int colno=1;colno<=collumns;++colno){
             if(rowno==1 or rowno==rows){
@@ -44,8 +45,32 @@ int main(){
                     cout<<" ";
                 }
             }
-            }
+            } 
         cout<<endl;
         }
+    */
 
-}    
+
+    //INVERTED HALF PYRAMID
+
+    int n;
+    cout<<"enter n: ";
+    string star="*";
+    cin>>n;
+    for(int rowno=n;rowno==0;rowno--){
+        for(int i=1;i<=rowno;i++){
+            cout<<star;
+        }
+        cout<<endl;
+        
+    }
+
+}   
+
+/*
+*****
+****
+***
+**
+*
+*/
