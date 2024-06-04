@@ -57,20 +57,13 @@ int main(){
     cout<<"enter n: ";
     string star="*";
     cin>>n;
-    for(int rowno=n;rowno==0;rowno--){
+    for(int rowno=n;rowno>=1;rowno--){
         for(int i=1;i<=rowno;i++){
             cout<<star;
-        }
+        }     
         cout<<endl;
         
-    }
+    } 
 
 }   
 
-/*
-*****
-****
-***
-**
-*
-*/
