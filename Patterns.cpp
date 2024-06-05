@@ -114,6 +114,39 @@ int main(){
 
    }
    */
+   //BUTTERFLY PATTERN
 
-  
+   int n;
+   cout<<"enter n: ";
+   cin>>n;
+   string star="*";
+   for(int rowno=1;rowno<=n;rowno++){
+        for(int j=1;j<=rowno;j++){
+            cout<<star;
+        }
+        int numspaces=(2*n)-(2*rowno);
+        for(int j=1;j<=numspaces;j++){
+            cout<<" ";
+        }
+        for(int j=1;j<=rowno;j++){
+            cout<<star;
+        }
+        cout<<endl;}
+    for(int rowno=n;rowno>=1;rowno--){
+        for(int j=1;j<=rowno;j++){
+            cout<<star;
+        }
+        int numspaces=(2*n)-(2*rowno);
+        for(int j=1;j<=numspaces;j++){
+            cout<<" ";
+        }
+        for(int j=1;j<=rowno;j++){
+            cout<<star;
+        }
+        cout<<endl;
+        
+
+   }
+
 }   
+//numspaces = 2*(n-(2*rowno))
