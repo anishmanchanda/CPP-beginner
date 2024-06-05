@@ -149,6 +149,7 @@ int main(){
    }*/
 
    //INVERTED PATTERN
+   /*
    int n;
    cout<<"enter n: ";
    cin>>n;
@@ -157,6 +158,22 @@ int main(){
         for(int colno=1;colno<=rowno;colno++){
             cout<<counter<<" ";
             counter+=1;
+        }
+        cout<<endl;
+   }*/
+
+   //0-1 PATTERN
+   int n;
+   cout<<"enter n: ";
+   cin>>n;
+   for(int rowno=1;rowno<=n;rowno++){
+        for(int colno=1;colno<=rowno;colno++){
+             if((rowno+colno)%2==0){
+                cout<<"1 ";
+             }
+             else{
+                cout<<"0 ";
+             }
         }
         cout<<endl;
    }
