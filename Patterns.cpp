@@ -7,7 +7,7 @@ int main(){
     //RECTANGLE
 
     /*
-    int length,breadth;
+    int length,breadth;                         
     cout<<"enter length";
     cin>>length;
     cout<<"enter breadth";
@@ -112,19 +112,19 @@ int main(){
         }
         cout<<endl;
 
-   }
-   */
+   }*/
+   
    //BUTTERFLY PATTERN
-
+   /*
    int n;
-   cout<<"enter n: ";
-   cin>>n;
-   string star="*";
-   for(int rowno=1;rowno<=n;rowno++){
-        for(int j=1;j<=rowno;j++){
-            cout<<star;
-        }
-        int numspaces=(2*n)-(2*rowno);
+   cout<<"enter n: ";                           
+   cin>>n;                                      
+   string star="*";                             
+   for(int rowno=1;rowno<=n;rowno++){           
+        for(int j=1;j<=rowno;j++){              
+            cout<<star;                         
+        }                                       
+        int numspaces=(2*n)-(2*rowno);          
         for(int j=1;j<=numspaces;j++){
             cout<<" ";
         }
@@ -146,7 +146,19 @@ int main(){
         cout<<endl;
         
 
+   }*/
+
+   //INVERTED PATTERN
+   int n;
+   cout<<"enter n: ";
+   cin>>n;
+   for(int rowno=n;rowno>=1;rowno--){
+        int counter=1;
+        for(int colno=1;colno<=rowno;colno++){
+            cout<<counter<<" ";
+            counter+=1;
+        }
+        cout<<endl;
    }
 
 }   
-//numspaces = 2*(n-(2*rowno))
