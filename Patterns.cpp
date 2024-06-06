@@ -163,7 +163,7 @@ int main(){
    }*/
 
    //0-1 PATTERN
-   int n;
+   /*int n;
    cout<<"enter n: ";
    cin>>n;
    for(int rowno=1;rowno<=n;rowno++){
@@ -176,6 +176,23 @@ int main(){
              }
         }
         cout<<endl;
+   }*/
+
+   //RHOMBUS PATTERN
+   int n;
+   cout<<"enter n: ";
+   cin>>n;
+   for(int rowno=1;rowno<=n;rowno++){
+        int numspace=n-rowno;
+        for(int colno=1;colno<=numspace;colno++){
+            cout<<" ";
+        }
+        for(int colno=1; colno<=n;colno++){
+            cout<<"* ";
+        }
+        cout<<endl;
+   
+    
    }
 
 }   
