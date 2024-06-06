@@ -227,7 +227,49 @@ int main(){
         }
         }
         cout<<endl;
+    }*/
+
+   //STAR PATTERN
+    /*
+    int n;
+    cout<<"enter n: ";
+    cin>>n;
+    for(int rowno=1;rowno<=n;rowno++){
+        int numspace=n-rowno;
+        for(int colno=1;colno<=numspace;colno++){
+            cout<<" ";
+        }
+        for(int colno=1;colno<=(2*rowno)-1;colno++){
+            cout<<"*";
+        }
+
+        cout<<endl;
     }
+    for(int rowno=n;rowno>=1;rowno--){
+        int numspace=n-rowno;
+        for(int colno=1;colno<=numspace;colno++){
+            cout<<" ";
+        }
+        for(int colno=1;colno<=(2*rowno)-1;colno++){
+            cout<<"*";
+        }
+
+        cout<<endl;
+    }*/
+
+   //ZIG ZAG PATTERN
+   int n;
+   cout<<"enter n: ";
+   cin>>n;
+   for(int rowno=1;rowno<=3;rowno++){
+        for(int colno=1;colno<=n;colno++){
+            if(((colno+rowno)%4==0)||((rowno==2)&&colno%4==0)){
+                cout<<"*";
+            }
+            else{cout<<" ";}
+        }
+        cout<<endl;
+   }
 
    
 
