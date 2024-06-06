@@ -272,6 +272,8 @@ int main(){
             }
         }
         cout<<endl;
+
+        
    }
 
 }   
