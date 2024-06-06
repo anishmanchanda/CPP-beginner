@@ -111,7 +111,6 @@ int main(){
 
         }
         cout<<endl;
-
    }*/
    
    //BUTTERFLY PATTERN
@@ -145,7 +144,6 @@ int main(){
         }
         cout<<endl;
         
-
    }*/
 
    //INVERTED PATTERN
@@ -179,6 +177,7 @@ int main(){
    }*/
 
    //RHOMBUS PATTERN
+   /*
    int n;
    cout<<"enter n: ";
    cin>>n;
@@ -191,8 +190,23 @@ int main(){
             cout<<"* ";
         }
         cout<<endl;
+   }*/
    
-    
+   //NUMBER PATTERN
+   int n;
+   cout<<"enter n: ";
+   cin>>n;
+   for(int numrow=1;numrow<=n;numrow++){
+        int numspace=n-numrow;
+        for(int numcol=1;numcol<=numspace;numcol++){
+            cout<<" ";
+        }
+        for(int numcol=1;numcol<=numrow;numcol++){
+            cout<<numcol<<" ";
+        }
+        cout<<endl;
    }
+
+   
 
 }   
