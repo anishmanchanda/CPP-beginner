@@ -23,6 +23,12 @@ int main(){
             minno=el;
         }
     }
+    //using built in func
+    for(int j=0;j<n;j++){
+        int el=array[j]; 
+        maxno=max(maxno,el);
+        minno=min(minno,el);
+    }
     cout<<"max is: "<<maxno<<endl;
     cout<<"min is: "<<minno<<endl;  
      
