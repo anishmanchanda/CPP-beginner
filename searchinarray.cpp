@@ -19,7 +19,7 @@ int main(){
     for(int i=0;i<n;i++){
         cout<<"enter element: ";
         cin>>arr[i];
-    }
+    }   
     cout<<"enter element to search: ";
     int key;
     cin>>key;  
