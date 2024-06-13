@@ -1,6 +1,5 @@
 //BINARY SEARCH
 //if elements in increasing order;faster search
-
 #include<iostream>
 using namespace std;
 int fastsearch(int arr[],int n,int key){
