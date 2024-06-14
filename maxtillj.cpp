@@ -17,5 +17,5 @@ int main(){
     for(int i=0;i<=j;i++){
         mx=max(mx,array[i]);
     }
-    cout<<mx;
+    cout<<mx<<endl;
 }
