@@ -10,12 +10,10 @@ int main(){
         cout<<"enter elements: ";
         cin>>array[i];
     }
-    int j;
-    cout<<"enter j: ";
-    cin>>j;
     int mx=INT_MIN;
-    for(int i=0;i<=j;i++){
+    for(int i=0;i<=n;i++){
         mx=max(mx,array[i]);
+        cout<<mx<<endl;
     }
-    cout<<mx<<endl;
+    
 }
