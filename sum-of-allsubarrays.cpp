@@ -14,7 +14,7 @@ int main(){
     {
         sum=0;
         for(int j=i;j<n;j++){
-            sum=+array[j];
+            sum+=array[j];
             cout<<sum<<endl;
             
         }
