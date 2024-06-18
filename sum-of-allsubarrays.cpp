@@ -10,15 +10,17 @@ int main(){
         cin>>array[i];
     }
     int sum=0;
+    int total=0;
     for(int i=0;i<n;i++)
     {
         sum=0;
         for(int j=i;j<n;j++){
             sum+=array[j];
             cout<<sum<<endl;
-            
+            total+=sum;
         }
+        
     }
+    cout<<"sum of all subarrays is: "<<total<<endl;
     return 0;
-    
 }
