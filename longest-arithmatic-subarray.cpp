@@ -20,7 +20,6 @@ int main(){
             length+=1;
         }
         pd=a-b;
-
     }
     cout<<length<<" elements in longest arithmatic subarray"<<endl;
     return 0;
