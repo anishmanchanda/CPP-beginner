@@ -6,4 +6,4 @@ int n;
         cout<<"enter element: ";
         cin>>arr[i];
     }
-    
+            
