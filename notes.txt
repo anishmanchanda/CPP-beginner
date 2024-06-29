@@ -6,4 +6,7 @@ int n;
         cout<<"enter element: ";
         cin>>arr[i];
     }
-            
+
+#include <climits>
+int maxno=INT_MIN;
+int minno=INT_MAX;
