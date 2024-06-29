@@ -10,3 +10,6 @@ int n;
 #include <climits>
 int maxno=INT_MIN;
 int minno=INT_MAX;
+
+2nd method to create array
+int arr[]={1,2,3,4,5,6,7}
