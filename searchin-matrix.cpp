@@ -23,13 +23,20 @@ int main(){
     cout<<"enter element to search: ";
     int x;
     cin>>x;
+    bool flag=false;
     for(int i=0;i<n;i++){
         for(int j=0;j<m;j++){
             if(arr[i][j]==x){
-                cout<<"element found"<<endl;
+                flag=true;
                 cout<<"row no.: "<<i+1<<" collumn no.: "<<j+1<<endl;
             }
         }
+    }
+    if(flag){
+        cout<<"element is found"<<endl;
+    }
+    else{
+        cout<<"entered element not found, try another"<<endl;
     }
     return 0;
 }
