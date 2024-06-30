@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 int main(){
     int n,m;
@@ -19,6 +19,17 @@ int main(){
             cout<<arr[i][j]<<" ";
         }
         cout<<endl;
+    }
+    cout<<"enter element to search: ";
+    int x;
+    cin>>x;
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+            if(arr[i][j]==x){
+                cout<<"element found"<<endl;
+                cout<<"row no.: "<<i+1<<" collumn no.: "<<j+1<<endl;
+            }
+        }
     }
     return 0;
 }
