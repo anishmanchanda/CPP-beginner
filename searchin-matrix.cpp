@@ -1,3 +1,5 @@
+//LINEAR SEARCH
+//traversing all elemnts
 #include <iostream>
 using namespace std;
 int main(){
