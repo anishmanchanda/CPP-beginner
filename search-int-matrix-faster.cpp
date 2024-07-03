@@ -27,11 +27,13 @@ int main(){
     int target;
     cin>>target;
     int row=0,col=m-1;
+    bool flag=false;
     while(row<n && col>=0){
         
         if(arr[row][col]==target){
             cout<<"element found"<<endl;
             cout<<"row: "<<row+1<<"  col: "<<col+1<<endl;
+            flag=true;
             break;
         }
         if(arr[row][col]>target){
@@ -40,6 +42,9 @@ int main(){
         else{
             row++;
         }
+    }
+    if(flag==false){
+        cout<<"entered element does not exist in matrix"<<endl;
     }
     return 0;
 
