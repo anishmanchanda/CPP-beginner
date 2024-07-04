@@ -17,3 +17,7 @@ int arr[]={1,2,3,4,5,6,7}
 2d arrays:-
 table(matrix) like structure
  int arr[n collumns][m rows]
+
+charecter arrays:-
+there are n+1 elements in the array as last charecter must be null
+char arr[n+1];
