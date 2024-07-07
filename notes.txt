@@ -10,6 +10,8 @@ int n;
 #include <climits>
 int maxno=INT_MIN;
 int minno=INT_MAX;
+ 
+ VOID FUNCTIONS DO NOT RETURN ANY VALUE.
 
 2nd method to create array
 int arr[]={1,2,3,4,5,6,7}
@@ -34,4 +36,9 @@ incrementing the pointer will increase it's value by 4
 and not 1
 this is because int consumes 4 bytes and pointer will 
 move to next memory location which is 4 bytes away
+
+in case of incrementing char pointer its value will
+only increase by 1 as it consumes only 1 byte
+
+POINTERS AND arrays
 
