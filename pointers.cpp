@@ -8,7 +8,7 @@ int main(){
     cout<<aptr<<endl;
     cout<<*aptr<<endl; //will print value of a
     //*aptr is original vaerile (a)
-    //&a is address of a
+     
     *aptr=20;
     cout<<a<<endl;
     return 0;

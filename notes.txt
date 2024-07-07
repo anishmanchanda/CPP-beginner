@@ -21,3 +21,17 @@ table(matrix) like structure
 charecter arrays:-
 there are n+1 elements in the array as last charecter must be null
 char arr[n+1];
+
+POINTERS
+int*aptr;
+// int* because a is int type variable. 
+if bool type then bool*aptr;
+aptr=&a;
+//*aptr is original variable (a)
+//&a is address of a
+
+incrementing the pointer will increase it's value by 4
+and not 1
+this is because int consumes 4 bytes and pointer will 
+move to next memory location which is 4 bytes away
+
