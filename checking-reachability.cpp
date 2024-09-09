@@ -9,6 +9,7 @@ int main(){
     cout<<"enter number of coordinates: ";
     cin>>n;
     int arr[n][n];
+    //creating matrix
     for(int i=0,i<n,i++){
         for(int j=0,j<n,j++){
             cout<<"if "<<j<<"is reachable from "<<i<<"enter 1"<<endl;
@@ -16,7 +17,7 @@ int main(){
             if (arr[i][j]!=1){
                 arr[i][j]==0;
             }
-
         }
     }
+
 }
