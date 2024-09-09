@@ -19,5 +19,7 @@ int main(){
             }
         }
     }
-
+    //traversing matrix
+    
+    
 }
