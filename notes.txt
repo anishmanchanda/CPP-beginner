@@ -42,3 +42,6 @@ only increase by 1 as it consumes only 1 byte
 
 POINTERS AND arrays
 
+STRINGS
+end with special charecter: \0
+
