@@ -13,18 +13,41 @@ int func(int numin){
         return n1-n2;
     }
     else if(numin==3){
-        
+        return n1*n2;
+    }
+    else if(numin==4){
+        return n1/n2;
+    }
+    else if(numin==5){
+        return n1%n2;
+    }
+    else{
+        return 0.0;
     }
 }
 int main(){
     bool flag=true;
-    int num,n;
-    int arr[15]
+    int num;
+    string arr[15];
     int count=0;
     while(flag==true){
         cin>>num;
-        if(num)
-        arr[count]=func(num);
+        if(num>0 && num<6){
+            int val=func(num);
+            arr[count]=to_string(val);
+        }
+        else if (num==6){
+            break;
+            flag=false;
+        }
+        else{
+            arr[count]="Invalid Operation";
+        }
         count+=1;
     }
+    cout<<endl;
+    for(int i=0;i<count;i++){
+        cout<<arr[i]<<endl;
+    }
+
 }
