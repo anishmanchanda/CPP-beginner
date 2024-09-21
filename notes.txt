@@ -45,3 +45,8 @@ POINTERS AND arrays
 STRINGS
 end with special charecter: \0
 
+BITWISE MANIPULATION
+1. Get Bit
+    1=0001
+    1<<2=0100(left shift operator)
+    
