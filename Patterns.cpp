@@ -258,6 +258,8 @@ int main(){
     }*/
 
    //ZIG ZAG PATTERN
+   
+   /*
    int n;
    cout<<"enter n: ";
    cin>>n;
@@ -266,6 +268,16 @@ int main(){
             if(((colno+rowno)%4==0)||((rowno==2)&&colno%4==0)){
                 cout<<"*";}
             else{cout<<" ";}
+        }
+        cout<<endl;
+   }*/
+   int n;
+   cout<<"enter n: ";
+   cin>>n;
+   char arr[7]={'A','B','C','D','E','F','G'};
+   for(int i=0;i<n;i++){
+        for(int j=0;j<i;j++){
+            cout<<arr[j];
         }
         cout<<endl;
    }

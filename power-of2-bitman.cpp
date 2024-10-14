@@ -4,7 +4,7 @@
 using namespace std;
 
 bool checkpower2(int num){
-    return (num && !(num & num-1));
+    return (num && ! (num & num-1));
 }
 int main(){
     int n;
