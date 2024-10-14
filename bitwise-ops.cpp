@@ -14,7 +14,7 @@ int clearBit(int n,int pos){
 int updateBit(int n,int pos,int value){//to update value at a certain position in a given binary no.
     int mask=~(1<<pos);
     n=n=n&mask;
-    return (n|(value<<pos));
+    return (n|(value<<pos));    
 }
 int main(){
     return 0;
