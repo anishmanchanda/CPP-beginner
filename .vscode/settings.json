@@ -3,6 +3,7 @@
     "files.associations": {
         "ostream": "cpp",
         "iostream": "cpp",
-        "bitset": "cpp"
+        "bitset": "cpp",
+        "vector": "cpp"
     }
 }
