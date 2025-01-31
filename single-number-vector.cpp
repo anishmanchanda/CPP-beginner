@@ -4,7 +4,6 @@ using namespace std;
 //USE XOR, 1^1=0, 0^0=0, 1^0=1, 0^1=0
 //number req is xor of entire input array/vec
 int main(){
-    
     int n;
     vector <int> nums;
     cin>>n;
