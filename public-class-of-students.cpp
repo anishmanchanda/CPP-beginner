@@ -7,6 +7,7 @@ class student{
     int age;
     bool gender;
 
+
     void printInfo(){//function to print the info of all, 
         cout<<"Name = ";//must be inside class
         cout<<name<<endl;
@@ -17,6 +18,9 @@ class student{
     }
 };
 int main(){
+
+    //Normal(slow) method for using class objs: 
+    
     student arr[3];//array of students
     for(int i=0;i<3;i++){
         cout<<"Name: ";
@@ -30,5 +34,8 @@ int main(){
     for(int i=0;i<3;i++){
         arr[i].printInfo();
     }
+    
+
+    
     return 0;
 }
