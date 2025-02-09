@@ -18,7 +18,7 @@ void insertAtHead(Node* &head,int val){
 }
 void insertAtTail(Node* &head, int val){
         //passing by ref.
-    Node *n=new Node(val);
+    Node* n=new Node(val);
     Node* temp=head;
     while(temp!=NULL){
         if((temp->next)==NULL){
@@ -30,8 +30,10 @@ void insertAtTail(Node* &head, int val){
     }
 }
 
+
 //function to display LL
 void display(Node* head){
+    cout<<endl;
     //passing by value bcs no change
     Node* temp=head;
     while(temp!=NULL){
@@ -52,5 +54,6 @@ int main(){
     insertAtTail(head,5);
     insertAtTail(head,10);
     display(head);
+    cout<<endl;
     return 0;
 }
