@@ -1,19 +1,54 @@
 #include <iostream>
 using namespace std;
-class node{
+class Node{
     public:
-    int data;
-    node* next;//node* is pointer variable (address)
-    node(int val){
-        data=val;
+    int val;//could be string or anything, whatever req to store
+    Node* next;//node* is pointer variable (address)
+    Node(int data){
+        val=data;
         next=NULL;
     }
 };
-void insertAtTail(node* &head,int val){
-    node* n=new node(val);
-    node* temp=head;
+//function to insert new node at start of LL
+void insertAtHead(Node* &head,int val){
+        //passing by ref. so changes can be made in LL
+    Node* n=new Node(val);
+    n->next=head;
+    head=n; 
+}
+void insertAtTail(Node* &head, int val){
+        //passing by ref.
+    Node *n=new Node(val);
+    Node* temp=head;
+    while(temp!=NULL){
+        temp=temp->next;
+        if(temp==NULL){
+            temp->next=n;
+            n->next=NULL;
+        }
+    }
+}
+
+//function to display LL
+void display(Node* head){
+    //passing by value bcs no change
+    Node* temp=head;
+    while(temp!=NULL){
+        cout<<temp->val<<"->";
+        temp=temp->next;
+    }
+    cout<<"NULL"<<endl;
 }
 int main(){
+    //Node* n=new Node(1);
+    //cout<<n->val<<" "<<n->next<<endl;
 
+    Node* head=NULL;//empty LL created
+    insertAtHead(head,2);
+    display(head);
+    insertAtHead(head,1);
+    display(head);
+    insertAtTail(head,5);
+    display(head);
     return 0;
 }

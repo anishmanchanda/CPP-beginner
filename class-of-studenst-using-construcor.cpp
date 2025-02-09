@@ -41,7 +41,7 @@ int main(){
         cin>>ag;
         cout<<"Gender: ";
         cin>>gen;
-        sArr[i]=
+        //sArr[i]=
     }
     cout<<endl;
     //a.printInfo();
