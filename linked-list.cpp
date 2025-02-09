@@ -29,8 +29,29 @@ void insertAtTail(Node* &head, int val){
         temp=temp->next;
     }
 }
+void insertAtArbitrary(Node* &head,int val,int pos){
+                        //pos is index(start from 0)
+    Node* n=new Node(val);
+    Node* temp=head;
+    int idx=0;
+    while(temp!=NULL){
+        if(pos==0){
+            n->next=head;
+            head=n;
+            break;      
+        }
+        if(idx==pos-1){
+            Node* temp2=temp->next;
+            temp->next=n;
+            n->next=temp2;
+            break;
+        }
+        temp=temp->next;
+        idx++;
+        
+    }
 
-
+}
 //function to display LL
 void display(Node* head){
     cout<<endl;
@@ -53,6 +74,12 @@ int main(){
     display(head);
     insertAtTail(head,5);
     insertAtTail(head,10);
+    display(head);
+    insertAtArbitrary(head,100,2);
+    display(head);
+    insertAtArbitrary(head,200,3);
+    display(head);
+    insertAtArbitrary(head,300,0);
     display(head);
     cout<<endl;
     return 0;
