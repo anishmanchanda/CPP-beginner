@@ -20,6 +20,11 @@ int main(){
     insertAtTail(head,30);
     insertAtTail(head,40);
     display(head);
+
+    UpdateAtPos(head,1,25);
+    display(head);
+    cout<<endl;
+
     return 0;
 
 
