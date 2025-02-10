@@ -1,5 +1,5 @@
 #include<iostream>
-#include "linked-list.h"
+#include "linked-list.h" //This pastes all contents of the file
 using namespace std;
 
 void UpdateAtPos(Node* &head,int pos,int newval){
