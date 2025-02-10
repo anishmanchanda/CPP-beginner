@@ -10,8 +10,8 @@ void DeleteKthElement(Node* &head,int pos){
             break;
         }
         if(idx==pos-1){
-            Node* temp2=temp->next;
-            temp2=temp2->next;
+            Node* temp2=temp->next->next;
+            //temp2=temp2->next;
             temp->next=temp2;
             break;
 
