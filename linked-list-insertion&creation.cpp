@@ -68,6 +68,7 @@ int main(){
     //cout<<n->val<<" "<<n->next<<endl;
 
     Node* head=NULL;//empty LL created
+    
     insertAtHead(head,2);
     display(head);
     insertAtHead(head,1);
