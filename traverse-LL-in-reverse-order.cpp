@@ -2,7 +2,7 @@
 #include "linked-list.h"
 using namespace std;
 //doing by recursion
-void reverse(Node* head){
+void reverseTraverse(Node* head){
     if(head==NULL){
         return;
     }
@@ -19,7 +19,7 @@ int main(){
     insertAtTail(head,6);
     display(head);
 
-    reverse(head);
+    reverseTraverse(head);
     cout<<endl;
     return 0;
 }
