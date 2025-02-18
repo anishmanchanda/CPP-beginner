@@ -2,7 +2,7 @@
 #include "linked-list.h"
 using namespace std;
 
-Node* reverseLL(Node* &head){
+Node* reverseLL(Node* head){
     Node* prev=NULL;
     Node* curr=head;
 
@@ -30,6 +30,7 @@ int main(){
     head=reverseLL(head);
     
     display(head);
+
     cout<<endl;
     return 0;
 }
