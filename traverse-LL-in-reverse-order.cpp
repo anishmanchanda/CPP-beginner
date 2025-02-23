@@ -6,7 +6,7 @@ void reverseTraverse(Node* head){
     if(head==NULL){
         return;
     }
-    reverse(head->next);
+    reverseTraverse(head->next);
     cout<<head->val<<"<-";
 }
 int main(){

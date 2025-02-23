@@ -61,3 +61,12 @@ void display(Node* head){
     }
     cout<<"NULL"<<endl;
 }
+int getLength(Node* head){
+    Node* temp=head;
+    int length=0;
+    while(temp!=NULL){
+        length++;
+        temp=temp->next;
+    }
+    return length;
+}
