@@ -61,6 +61,15 @@ void display(Node* head){
     }
     cout<<"NULL"<<endl;
 }
+void displayAddresses(Node* head){
+    cout<<endl;
+    Node* temp=head;
+    while(temp!=NULL){
+        temp=temp->next;
+        cout<<temp<<"->";
+    }
+    cout<<"NULL"<<endl;
+}
 int getLength(Node* head){
     Node* temp=head;
     int length=0;
