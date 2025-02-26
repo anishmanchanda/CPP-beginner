@@ -28,7 +28,7 @@ int main(){
     insertAtTail(head2, 30);
     insertAtTail(head2, 40);
     insertAtTail(head2, 50);
-    insertAtTail(head2, 60);    
+    insertAtTail(head2, 60);
 
     display(head1);
     display(head2);
