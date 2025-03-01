@@ -79,3 +79,29 @@ int getLength(Node* head){
     }
     return length;
 }
+Node* reverseLL(Node* head){
+    Node* prev=NULL;
+    Node* curr=head;
+
+    while(curr!=NULL ){
+        Node* next=curr->next;//similar to temporary variable
+        curr->next=prev;  
+        prev=curr;
+        curr=next;
+        //cout<<prev->val<<" "<<curr->val<<" "<<next->val<<endl; 
+    }   
+    Node* newhead=prev;
+    return newhead;
+}
+bool checkIfEqual(Node* head1,Node* head2){
+    Node* temp1 = head1;
+    Node* temp2 = head2;
+    while(temp1!=NULL && temp2!=NULL){
+        if(temp1->val!=temp2->val){
+            return false;
+        }
+        temp1=temp1->next;
+        temp2=temp2->next;
+    }
+    return (temp1==NULL && temp2==NULL);
+}

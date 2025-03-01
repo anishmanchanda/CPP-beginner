@@ -4,13 +4,9 @@ using namespace std;
 int middleElement(Node* head){
     Node* fast=head;
     Node* slow=head;
-    int count=0;
-    while(fast!=NULL){
-        count++;
-        if(count%2==0){
-            slow=slow->next;
-        }
-        fast=fast->next;
+    while(fast->next!=NULL){
+        slow=slow->next;
+        fast=fast->next->next;
     }
     return slow->val;
 }
@@ -24,6 +20,6 @@ int main(){
     insertAtTail(head, 50);
     display(head);
 
-    cout<<endl<<middleElement(head)<<endl;
+    cout<<endl<<"Middle element is: "<<middleElement(head)<<endl;
     return 0;
 }
